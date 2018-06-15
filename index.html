@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/css.css">
+    <!--
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300,400" rel="stylesheet">
+-->
+    <script src="script/jquery-3.3.1.js"></script>
+    <script src="script/particles.js-master/particles.min.js"></script>
+    <script src="script/particles.js-master/particlesjs-config.json"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <div>
+                <a class="link" href="#"><img src="./img/about.svg" alt=""/></a>
+                <a class="link" href="#"><img src="./img/cv.svg" alt=""></a>
+            </div>
+        </nav>
+        <section id="section1">
+            <div class="container-front">
+                <dvi class="box">
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="Logo" />
+                    </div>
+                    <div class="box-row">
+                        <p>Beautiful Gallery</p>
+                    </div>
+                    <div class="box-row--small">
+                        <p>Portfolio</p>
+                    </div>
+                </dvi>
+            </div>
+            <div id="particles-js"></div>
+        </section>
+    </div>
+    <script>
+        particlesJS.load("particles-js", "./script/particles.js-master/particlesjs-config.json", function() {
+            console.log("loaded...");
+        });
+    </script>
+    <!--    <script type="text/javascript" src="script/script.js"></script>-->
+</body>
+
+</html>
