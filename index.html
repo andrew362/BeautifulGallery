@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <!--
     <link href="https://fonts.googleapis.com/css?family=Roboto:300|600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300,400" rel="stylesheet">
 -->
-    <script src="script/jquery-3.3.1.js"></script>
-    <script src="script/particles.js-master/particles.min.js"></script>
-    <script src="script/particles.js-master/particlesjs-config.json"></script>
+
 </head>
 
-<body>
+<body id='body'>
     <div id="wrapper">
         <nav>
             <div>
                 <a class="link" href="#"><img src="./img/about.svg" alt=""/></a>
-                <a class="link" href="#"><img src="./img/cv.svg" alt=""></a>
+<!--                <a class="link" href="#"><img src="./img/cv.svg" alt=""></a>-->
             </div>
         </nav>
         <section id="section1">
@@ -40,13 +39,37 @@
             </div>
             <div id="particles-js"></div>
         </section>
+        
+        <section>
+        <div id="gallery">
+        <div class="item"><a href="https://placeimg.com/800/600/nature?first" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?first" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?second" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?second" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?third" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?third" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?fourth" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?fourth" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?fifth" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?fifth" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?sixth" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?sixth" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?seventh" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?seventh" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?eighth" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?eighth" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?ninth" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?ninth" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?tenth" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?tenth" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?eleventh" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?eleventh" alt=""></a></div>
+        <div class="item"><a href="https://placeimg.com/800/600/nature?twelvth" data-fancybox="gallery"><img src="https://placeimg.com/800/600/nature?twelvth" alt=""></a></div>
+        
     </div>
+    </section>
+    </div>
+    
+
+    <script src="./script/jquery-3.3.1.js"></script>
+    <script src="./script/particles.js-master/particles.min.js"></script>
+    <script src="./script/particles.js-master/particlesjs-config.json"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <script>
         particlesJS.load("particles-js", "./script/particles.js-master/particlesjs-config.json", function() {
             console.log("loaded...");
         });
     </script>
-    <!--    <script type="text/javascript" src="script/script.js"></script>-->
+    <script type="text/javascript" src="./script/script.js"></script>
 </body>
 
 </html>
