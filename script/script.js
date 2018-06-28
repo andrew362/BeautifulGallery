@@ -1,7 +1,7 @@
-   $(document).ready(function () {
-
-
-
+   $(window).on('load',function () {
+       console.log('window loaded');
+       
+       $('#loadBG').fadeOut().remove();
 
        $(document).on('scroll', function () {
            stop();
@@ -11,14 +11,13 @@
             particles.css("transform", "translateY(-" + 0.1*wScroll + "px)");
        });
 
-    
        	$(document).on('click', '.link', function(event){
 	    event.preventDefault();
 	    $('html, body').animate({
 	        scrollTop:$($.attr(this, 'href')).offset().top
 	    }, 800);
 	});
-       
+            
    });
 
 
