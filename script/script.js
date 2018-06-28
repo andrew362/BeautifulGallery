@@ -4,12 +4,21 @@
 
 
        $(document).on('scroll', function () {
+           stop();
            console.log($(this).scrollTop());
            var wScroll = $(this).scrollTop();
            var particles = $('#particles-js');
             particles.css("transform", "translateY(-" + 0.1*wScroll + "px)");
        });
 
+    
+       	$(document).on('click', '.link', function(event){
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop:$($.attr(this, 'href')).offset().top
+	    }, 800);
+	});
+       
    });
 
 
